@@ -2,6 +2,20 @@
 
 {% block content %}
 
-<h1>Hello world!</h1>
+{% if company_response %}
+    {% if error %}
+        {{ error }}
+    {% else %}
+        <h1>{{ company_response.Name }}</h1> <br/>
+        Price: ${{ stock_quote.price }} <br/>
+        Previous Close: ${{ stock_quote.previousclose }} <br/>
+        Market Cap: {{ company_response.MarketCapitalization }} <br/>
+        52 Week High: {{ company_response.52WeekHigh }} <br/>
+        52 Week Low: {{ company_response.52WeekLow }} <br/>
+    {% endif %}
+{% else %}
+    {{ welcome_message }}
+{% endif %}
+
 
 {% endblock %}

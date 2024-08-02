@@ -22,4 +22,5 @@
 
 ### References
 - [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
-  
+- [Metalpriceapi](https://metalpriceapi.com/dashboard)
+- [AlphaVantage](https://www.alphavantage.co/documentation/)
