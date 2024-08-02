@@ -19,4 +19,7 @@
 ### Create App quotes
 - python manage.py startapp quotes
 - Each app needs to have it urls file. Create quotes/urls.py
+
+### References
+- [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
   
