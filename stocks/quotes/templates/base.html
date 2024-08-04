@@ -18,6 +18,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'about' %}">About</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'add_stocks' %}">Add Stocks</a>
+              </li>
             </ul>
             <form action= "{% url 'home' %}" class="d-flex" role="search" method="POST">
                 {% csrf_token %}
@@ -28,6 +31,16 @@
         </div>
     </nav>
     <div class="container">
+        <br/>
+        {% if messages %}
+          {% for message in messages %}
+            <div class="alert alert-warning alert-dismissible" role="alert">
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              <div>{{ message }}</div>
+            </div>
+          {% endfor %}
+        {% endif %}
+        
         <br/>
         {% block content %}
         {% endblock %}

@@ -20,6 +20,13 @@
 - python manage.py startapp quotes
 - Each app needs to have it urls file. Create quotes/urls.py
 
+### Run Migrations
+- Create Migrations
+python manage.py makemigrations
+- Push Migration to DB
+python manage.py migrate
+
+
 ### References
 - [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 - [Metalpriceapi](https://metalpriceapi.com/dashboard)
